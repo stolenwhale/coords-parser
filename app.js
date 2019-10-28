@@ -1,6 +1,8 @@
 const Excel = require("exceljs");
 const rp = require("request-promise");
 
+const myKey = 'ВВЕДИТЕ ВАШ КЛЮЧ';
+
 console.log("Я родился и начал работу");
 
 // инициализация excel-файла
@@ -27,7 +29,7 @@ workbook.xlsx.readFile("Адресная программа.xlsx").then(function
       method: "GET",
       url: url,
       qs: {
-        key: "ВАШ КЛЮЧ", 
+        key: myKey, 
         q: addresses[i],
         format: "json",
         limit: 1
