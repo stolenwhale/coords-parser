@@ -10,7 +10,7 @@
 
 ### Установка:
 1. Установите [Node.js](https://nodejs.org/ru/) и npm-пакеты в папку программы. 
-2. Внесите токен-ключ от одного из API в app.js (если у вас есть ключ от Google API) или app-free.js (если у вас есть ключ Locationiq API).
+2. Внесите токен-ключ от одного из API в **app.js** (если у вас есть ключ от Google API) или **app-free.js** (если у вас есть ключ Locationiq API).
 ```javascript
   ...
   const myKey = 'ВВЕДИТЕ ВАШ КЛЮЧ';
