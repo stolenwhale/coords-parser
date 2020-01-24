@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' https://maps.googleapis.com/maps/api/geocode/json"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="script-src 'self' https://maps.googleapis.com/maps/api/geocode/json"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Coords Parser</title>
+  </head>
+  <body>
+    <p id="notification">Введите или скопируйте из таблицы excel адреса. <br> Каждый адрес должен начинаться с новой строки</p>
+    <div class="app-content">
+      <textarea
+        name="addresses"
+        id="addresses"
+        cols="50"
+        rows="10"
+      ></textarea>
+      <table class="coords-table" id="coords-table">
+        <thead>
+          <tr>
+            <td>Адрес</td>
+            <td>lat</td>
+            <td>lng</td>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="app-controls">
+    <button class="btn" id="get-coords">Загрузить координаты</button>
+      <button class="btn" id="copy-coords">Скопировать координаты</button>
+
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

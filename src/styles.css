@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/font/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 1.5%;
+}
+
+#notification {
+  font-size: 1.3rem;
+}
+
+.app-content {
+  display: flex;
+  justify-content: space-between;
+}
+#addresses {
+  width: 100%;
+  padding: 5px;
+}
+
+#addresses {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  border: 1px solid #428bca54;
+}
+
+#addresses:hover {
+  border: 1px solid #428bca;
+}
+
+#addresses:focus {
+  outline: none;
+  border: 1px solid #428bca;
+}
+
+.coords-table {
+  display: none;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+.coords-table thead {
+  background: #c9dff0;
+}
+
+.coords-table td {
+  padding: 5px 15px;
+  border-right: 1px solid #00000012;
+}
+.coords-table tbody td {
+  border-bottom: 1px solid #00000030;
+}
+
+.btn {
+  border: none;
+  margin-top: 30px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #428bca;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+.btn:hover {
+  background-color: #428bcaf2;
+}
+.btn#copy-coords {
+  display: none;
+}
