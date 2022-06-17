@@ -13,7 +13,7 @@
   "author": "StolenWhale",
   "license": "",
   "devDependencies": {
-    "electron": "^7.1.9",
+    "electron": "^15.5.5",
     "electron-packager": "^14.2.0"
   },
   "dependencies": {
